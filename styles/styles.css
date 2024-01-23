@@ -1,0 +1,189 @@
+body {
+  height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+  font-family: Outfit, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 48%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 8em;
+  margin-bottom: 2em;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  font-family: Young serif, sans-serif;
+}
+
+p, ul, li {
+  color: hsl(30, 10%, 34%);
+}
+
+.title {
+  font-size: 42px;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.description {
+  margin-bottom: 40px;
+}
+
+.prep-container {
+  background-color: hsl(330, 100%, 98%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.preparation {
+  font-size: 20px;
+  font-family: Outfit, sans-serif;
+  margin-left: 20px;
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-time {
+  margin-left: 4px;
+  line-height: 2;
+}
+
+.preparation-time span {
+  font-weight: 700;
+}
+
+.preparation-time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-time li {
+  padding-left: 20px;
+}
+
+.subtitle {
+  color: hsl(14, 45%, 36%);
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.ingredients-list {
+  margin-left: -14px;
+  line-height: 2;
+}
+
+.ingredients-list li::marker,
+.instructions-list li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients-list li,
+.instructions-list li {
+  padding-left: 20px;
+}
+
+.instructions {
+  border-top: 1px solid hsl(30, 18%, 87%);
+  margin-bottom: 40px;
+}
+
+.instructions-list {
+  margin-left: -14px;
+}
+
+.instructions-list li {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.instructions-list li::marker {
+  font-weight: 700;
+}
+
+.instructions-list span {
+  font-weight: 700;
+}
+
+.nutrition {
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+table {
+  display: flex;
+}
+
+tbody {
+  flex: 1;
+}
+tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+td {
+  flex: 1;
+  color: hsl(30, 10%, 34%);
+}
+
+td:last-child {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  section {
+    padding: 0 40px;
+  }
+
+  .img-container {
+    margin: 0 -40px;
+  }
+
+  .img-container img {
+    border-radius: 0;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .nutrition {
+    margin-bottom: 20px;
+  }
+
+}
